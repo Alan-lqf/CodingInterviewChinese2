@@ -36,6 +36,7 @@ def find_next_node_in_inordered1(node):
             return parent
 
         # 节点是父节点的右子节点，返回是左子节点的祖先节点的父节点
+        ## 节点是父节点的右子节点，沿着父节点一直向上找，直到找到一个是它父节点的左子节点的节点，这个节点的父节点即为所求##
         if id(node) == id(parent.right_child):
             while parent.parent:
                 if id(parent) == id(parent.parent.left_child):

@@ -15,7 +15,7 @@ def find_min_in_rotated_arr(numbers):
 
         mid = (p1 + p2) // 2
         # 两端和中间三个数相等时 只能顺序查找
-        if numbers[mid] == numbers[p1] and numbers == numbers[p2]:
+        if numbers[mid] == numbers[p1] and numbers[p1] == numbers[p2]:
             return find_in_order(numbers[p1:p2 + 1])
 
         if numbers[mid] >= numbers[p1]:
@@ -26,5 +26,5 @@ def find_min_in_rotated_arr(numbers):
 
 
 if __name__ == "__main__":
-    print(find_in_order([3, 4, 5, 1, 2]))
-    print(find_in_order([1, 1, 1, 1, 1]))
+    print(find_min_in_rotated_arr([3, 4, 5, 1, 2]))
+    print(find_min_in_rotated_arr([1, 1, 1, 1, 1]))

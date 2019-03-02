@@ -27,4 +27,4 @@ def find_min_in_rotated_arr(numbers):
 
 if __name__ == "__main__":
     print(find_min_in_rotated_arr([3, 4, 5, 1, 2]))
-    print(find_min_in_rotated_arr([1, 1, 1, 1, 1]))
+    print(find_min_in_rotated_arr([1, 0, 1, 1, 1]))

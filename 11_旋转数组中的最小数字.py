@@ -22,6 +22,7 @@ def find_min_in_rotated_arr(numbers):
             p1 = mid
         else:
             p2 = mid
+    # 原本就有序，第一个数即为最小
     return p1, numbers[p1]
 
 
